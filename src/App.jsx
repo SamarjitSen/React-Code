@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './components/card.component';
 
 function App() {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <button onClick={handleClick}>click</button>
-      {isVisible ? <h1>hidden heading</h1> : null}
+      {isVisible ? <Card /> : null}
     </>
   );
 }
